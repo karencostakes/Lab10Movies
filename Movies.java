@@ -24,7 +24,7 @@ public class Movies {
 	}
 
 	public String getCategory() {
-	System.out.println("hello!");
+	//System.out.println("hello!");
 		return category;
 	}
 	

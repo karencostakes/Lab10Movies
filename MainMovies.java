@@ -37,38 +37,14 @@ public class MainMovies {
 
 			Movies m1 = new Movies(title, category);
 			m1.setCategory(scan1.toString());
-			
-			//for (int a=0; a<movieList.size(); a++)
-			 
-			//{if(category.equalsIgnoreCasemovielist.get(a).getCategory)
-				//{System.out.println();	
-				//}
-			//}
-			
-			
-			
-			
-			
-			if (category.equalsIgnoreCase("horror")) {
-				System.out.println(movieList.get(6).getTitle());
-				System.out.println(movieList.get(7).getTitle());
-				System.out.println(movieList.get(8).getTitle());
-			}
-			if (category.equalsIgnoreCase("animated")) {
-				System.out.println(movieList.get(0).getTitle());
-				System.out.println(movieList.get(1).getTitle());
-				System.out.println(movieList.get(2).getTitle());
-			}
 
-			if (category.equalsIgnoreCase("drama")) {
-				System.out.println(movieList.get(3).getTitle());
-				System.out.println(movieList.get(4).getTitle());
-				System.out.println(movieList.get(5).getTitle());
-			}
-			if (category.equalsIgnoreCase("scifi")) {
-				System.out.println(movieList.get(9).getTitle());
-				System.out.println(movieList.get(10).getTitle());
-				System.out.println(movieList.get(11).getTitle());
+			for (int a = 0; a < movieList.size(); a++) {
+
+				if (category.equalsIgnoreCase(movieList.get(a).getCategory())) {
+					System.out.println(movieList.get(a).getTitle());
+					;
+				}
+
 			}
 
 			System.out.println("Continue?");

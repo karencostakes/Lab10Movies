@@ -6,13 +6,6 @@ public class Movies {
 
 	private String title;
 	private String category;
-	// ArrayList <String> animatedTitles = new ArrayList <> ();
-	
-
-	// ArrayList <String> dramaTitles = new ArrayList <> ();
-
-	// ArrayList <String> horrorTitles = new ArrayList <> ();
-	// ArrayList <String> scifiTitles = new ArrayList <> ();
 
 	public String getTitle() {
 

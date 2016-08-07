@@ -33,20 +33,29 @@ public class MainMovies {
 			System.out.println(
 					"What category are you interested in? (Please enter animated, drama, horror, scifi and don't you dare enter anything else!!!)");
 			category = scan1.nextLine();
-			System.out.println("Here are the movies in the " + category + "category: ");
 
 			Movies m1 = new Movies(title, category);
 			m1.setCategory(scan1.toString());
+			if (category.equalsIgnoreCase("animated") || category.equalsIgnoreCase("drama")
+					|| category.equalsIgnoreCase("horror") || category.equalsIgnoreCase("scifi"))
 
-			for (int a = 0; a < movieList.size(); a++) {
+			{
+				System.out.println("Here are the movies in the " + category + " category: ");
 
-				if (category.equalsIgnoreCase(movieList.get(a).getCategory())) {
-					System.out.println(movieList.get(a).getTitle());
-					;
+				for (int a = 0; a < movieList.size(); a++) {
+
+					if (category.equalsIgnoreCase(movieList.get(a).getCategory())) {
+
+						System.out.println(movieList.get(a).getTitle());
+						;
+					}
+
 				}
-
+			} else {
+				System.out.println(
+						"You have entered an invalid input!");
+				continue;
 			}
-
 			System.out.println("Continue?");
 			choice = scan1.nextLine();
 		}
